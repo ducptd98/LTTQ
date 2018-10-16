@@ -153,7 +153,7 @@
             this.chkAutoFill.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkAutoFill.Location = new System.Drawing.Point(148, 110);
             this.chkAutoFill.Name = "chkAutoFill";
-            this.chkAutoFill.Size = new System.Drawing.Size(93, 17);
+            this.chkAutoFill.Size = new System.Drawing.Size(118, 21);
             this.chkAutoFill.TabIndex = 3;
             this.chkAutoFill.Text = "Vẽ trọn khung";
             this.chkAutoFill.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             // 
             this.txtDelay.Location = new System.Drawing.Point(148, 137);
             this.txtDelay.Name = "txtDelay";
-            this.txtDelay.Size = new System.Drawing.Size(103, 21);
+            this.txtDelay.Size = new System.Drawing.Size(103, 24);
             this.txtDelay.TabIndex = 1;
             this.txtDelay.Text = "0";
             this.txtDelay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDelay_KeyPress);
@@ -173,7 +173,7 @@
             this.txtMin.Enabled = false;
             this.txtMin.Location = new System.Drawing.Point(148, 83);
             this.txtMin.Name = "txtMin";
-            this.txtMin.Size = new System.Drawing.Size(103, 21);
+            this.txtMin.Size = new System.Drawing.Size(103, 24);
             this.txtMin.TabIndex = 1;
             this.txtMin.Text = "30";
             this.txtMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMin_KeyPress);
@@ -183,7 +183,7 @@
             this.txtMax.Enabled = false;
             this.txtMax.Location = new System.Drawing.Point(148, 56);
             this.txtMax.Name = "txtMax";
-            this.txtMax.Size = new System.Drawing.Size(103, 21);
+            this.txtMax.Size = new System.Drawing.Size(103, 24);
             this.txtMax.TabIndex = 1;
             this.txtMax.Text = "30";
             this.txtMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMax_KeyPress);
@@ -192,7 +192,7 @@
             // 
             this.txtTiLe.Location = new System.Drawing.Point(148, 25);
             this.txtTiLe.Name = "txtTiLe";
-            this.txtTiLe.Size = new System.Drawing.Size(103, 21);
+            this.txtTiLe.Size = new System.Drawing.Size(103, 24);
             this.txtTiLe.TabIndex = 1;
             this.txtTiLe.Text = "30";
             this.txtTiLe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTiLe_KeyPress);
@@ -202,7 +202,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(96, 86);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.Size = new System.Drawing.Size(47, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "+ Min:";
             // 
@@ -211,7 +211,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(96, 59);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Size = new System.Drawing.Size(52, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "+ Max:";
             // 
@@ -220,7 +220,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 59);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 13);
+            this.label6.Size = new System.Drawing.Size(70, 17);
             this.label6.TabIndex = 0;
             this.label6.Text = "- Giới hạn:";
             // 
@@ -229,7 +229,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 140);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.Size = new System.Drawing.Size(93, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "- Độ trễ (ms):";
             // 
@@ -238,7 +238,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 13);
+            this.label2.Size = new System.Drawing.Size(162, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "- Tỉ lệ trục (Độ phóng K):";
             // 
@@ -365,7 +365,7 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label7.Location = new System.Drawing.Point(12, 47);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 13);
+            this.label7.Size = new System.Drawing.Size(122, 17);
             this.label7.TabIndex = 2;
             this.label7.Text = "Ví dụ: (sin(x)+3)/4";
             // 
@@ -385,7 +385,7 @@
             // 
             this.txtFunction.Location = new System.Drawing.Point(14, 20);
             this.txtFunction.Name = "txtFunction";
-            this.txtFunction.Size = new System.Drawing.Size(212, 21);
+            this.txtFunction.Size = new System.Drawing.Size(212, 24);
             this.txtFunction.TabIndex = 0;
             this.txtFunction.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFunction_KeyPress);
             // 
@@ -406,18 +406,19 @@
             // 
             // sts
             // 
+            this.sts.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.sts.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ttStatus});
-            this.sts.Location = new System.Drawing.Point(0, 588);
+            this.sts.Location = new System.Drawing.Point(0, 585);
             this.sts.Name = "sts";
-            this.sts.Size = new System.Drawing.Size(847, 22);
+            this.sts.Size = new System.Drawing.Size(847, 25);
             this.sts.TabIndex = 11;
             this.sts.Text = "statusStrip1";
             // 
             // ttStatus
             // 
             this.ttStatus.Name = "ttStatus";
-            this.ttStatus.Size = new System.Drawing.Size(119, 17);
+            this.ttStatus.Size = new System.Drawing.Size(149, 20);
             this.ttStatus.Text = "Trạng thái: Sẵn sàng !";
             // 
             // trkZoom
@@ -429,7 +430,7 @@
             this.trkZoom.Minimum = 1;
             this.trkZoom.Name = "trkZoom";
             this.trkZoom.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trkZoom.Size = new System.Drawing.Size(45, 163);
+            this.trkZoom.Size = new System.Drawing.Size(56, 163);
             this.trkZoom.TabIndex = 12;
             this.trkZoom.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.trkZoom.Value = 5;
@@ -454,6 +455,7 @@
             // 
             // ctMenu
             // 
+            this.ctMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ctMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cosToolStripMenuItem,
             this.sinToolStripMenuItem,
@@ -470,101 +472,101 @@
             this.toolStripMenuItem4,
             this.toolStripMenuItem6});
             this.ctMenu.Name = "ctMenu";
-            this.ctMenu.Size = new System.Drawing.Size(95, 296);
+            this.ctMenu.Size = new System.Drawing.Size(104, 322);
             // 
             // cosToolStripMenuItem
             // 
             this.cosToolStripMenuItem.Name = "cosToolStripMenuItem";
-            this.cosToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.cosToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.cosToolStripMenuItem.Text = "cos";
             this.cosToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // sinToolStripMenuItem
             // 
             this.sinToolStripMenuItem.Name = "sinToolStripMenuItem";
-            this.sinToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.sinToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.sinToolStripMenuItem.Text = "sin";
             this.sinToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // tanToolStripMenuItem
             // 
             this.tanToolStripMenuItem.Name = "tanToolStripMenuItem";
-            this.tanToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.tanToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.tanToolStripMenuItem.Text = "tan";
             this.tanToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // logToolStripMenuItem
             // 
             this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.logToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.logToolStripMenuItem.Text = "log";
             this.logToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // lnToolStripMenuItem
             // 
             this.lnToolStripMenuItem.Name = "lnToolStripMenuItem";
-            this.lnToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.lnToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.lnToolStripMenuItem.Text = "ln";
             this.lnToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // sqrtToolStripMenuItem
             // 
             this.sqrtToolStripMenuItem.Name = "sqrtToolStripMenuItem";
-            this.sqrtToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.sqrtToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.sqrtToolStripMenuItem.Text = "sqrt";
             this.sqrtToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // sqrToolStripMenuItem
             // 
             this.sqrToolStripMenuItem.Name = "sqrToolStripMenuItem";
-            this.sqrToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.sqrToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.sqrToolStripMenuItem.Text = "sqr";
             this.sqrToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // absToolStripMenuItem
             // 
             this.absToolStripMenuItem.Name = "absToolStripMenuItem";
-            this.absToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.absToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.absToolStripMenuItem.Text = "abs";
             this.absToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // expToolStripMenuItem
             // 
             this.expToolStripMenuItem.Name = "expToolStripMenuItem";
-            this.expToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.expToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
             this.expToolStripMenuItem.Text = "exp";
             this.expToolStripMenuItem.Click += new System.EventHandler(this.cosToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(91, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 6);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(94, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(103, 24);
             this.toolStripMenuItem2.Text = "+";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.subToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(94, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(103, 24);
             this.toolStripMenuItem5.Text = "- ";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.subToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(94, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(103, 24);
             this.toolStripMenuItem4.Text = "*";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.subToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(94, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(103, 24);
             this.toolStripMenuItem6.Text = "/";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.subToolStripMenuItem_Click);
             // 
@@ -580,7 +582,7 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 610);
             this.Controls.Add(this.btnZoom);

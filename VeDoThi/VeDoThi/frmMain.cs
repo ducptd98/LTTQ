@@ -138,7 +138,7 @@ namespace VeDoThi
         {
             fn.Parse(txtFunction.Text.ToLower());
             fn.Infix2Postfix();
-            if(fn.Variables.Count==0)
+            if (fn.Variables.Count ==0 && txtFunction.Text != "")
             {
                 PicPaint.Refresh();
                 float _y = float.Parse(txtFunction.Text);
@@ -146,10 +146,10 @@ namespace VeDoThi
                 Application.DoEvents();
 
                 Pen pen1 = new Pen(Color.Blue, 2);
-               
+
                 g.DrawLine(pen1, x0 * min, y0 - _y * k, x0 * max, y0 - _y * k);
 
-                
+
 
                 return;
             }
@@ -273,8 +273,11 @@ namespace VeDoThi
             }
             return fn.Result;
         }
-
-
+        protected override void OnPaint(PaintEventArgs pe)
+        {
+            if (txtFunction.Text != "")
+                PaintGraph();
+        }
         private void btnFunc_Click(object sender, EventArgs e)
         {
             ctMenu.Show(btnFunc.Left + grpFunc.Left, btnFunc.Top + btnFunc.Height + grpFunc.Top);
@@ -393,10 +396,5 @@ namespace VeDoThi
         {
             if (e.KeyChar == 13) btnPaint_Click(null, null);
         }
-
-
-
-
-
     }
 }
