@@ -71,6 +71,7 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicPaint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicIntroduce)).BeginInit();
             this.grpValue.SuspendLayout();
@@ -253,6 +254,7 @@
             // 
             // grpFunc
             // 
+            this.grpFunc.Controls.Add(this.button1);
             this.grpFunc.Controls.Add(this.btnPaint);
             this.grpFunc.Controls.Add(this.label7);
             this.grpFunc.Controls.Add(this.btnFunc);
@@ -267,7 +269,7 @@
             // btnPaint
             // 
             this.btnPaint.Image = ((System.Drawing.Image)(resources.GetObject("btnPaint.Image")));
-            this.btnPaint.Location = new System.Drawing.Point(153, 64);
+            this.btnPaint.Location = new System.Drawing.Point(14, 84);
             this.btnPaint.Name = "btnPaint";
             this.btnPaint.Size = new System.Drawing.Size(104, 34);
             this.btnPaint.TabIndex = 3;
@@ -500,6 +502,18 @@
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(154, 84);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 34);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Clear";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -585,6 +599,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.CheckBox chkAutoFill;
         private System.Windows.Forms.ToolStripMenuItem sqrToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

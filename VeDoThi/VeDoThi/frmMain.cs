@@ -22,7 +22,7 @@ namespace VeDoThi
         bool stop = false, repaint = false ;
         int positionY = 5;
         int colorPositon = 0;
-        Color[] listColor = { Color.Blue, Color.Red, Color.Green };
+        Color[] listColor = { Color.Blue, Color.Red, Color.Green, Color.Yellow };
 
         public frmMain()
         {
@@ -140,6 +140,12 @@ namespace VeDoThi
             AutoMinMax();
             PaintGraph();
             btnZoomIn.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PicPaint.Refresh();
+            positionY = 5;
         }
 
         private void btnZoomOut_Click(object sender, EventArgs e)
@@ -283,7 +289,7 @@ namespace VeDoThi
 
             Pen pen = new Pen(listColor[colorPositon], 2);
             colorPositon++;
-            if (colorPositon == 3)
+            if (colorPositon == 4)
                 colorPositon = 0;
             x = min;
             dx = 1.0f / k;
