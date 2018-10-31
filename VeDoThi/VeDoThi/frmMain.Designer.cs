@@ -35,14 +35,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.grpValue = new System.Windows.Forms.GroupBox();
             this.chkAutoFill = new System.Windows.Forms.CheckBox();
-            this.txtDelay = new System.Windows.Forms.TextBox();
             this.txtMin = new System.Windows.Forms.TextBox();
             this.txtMax = new System.Windows.Forms.TextBox();
             this.txtTiLe = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnZoomOut = new System.Windows.Forms.Button();
@@ -124,18 +122,16 @@
             // grpValue
             // 
             this.grpValue.Controls.Add(this.chkAutoFill);
-            this.grpValue.Controls.Add(this.txtDelay);
             this.grpValue.Controls.Add(this.txtMin);
             this.grpValue.Controls.Add(this.txtMax);
             this.grpValue.Controls.Add(this.txtTiLe);
             this.grpValue.Controls.Add(this.label5);
             this.grpValue.Controls.Add(this.label4);
             this.grpValue.Controls.Add(this.label6);
-            this.grpValue.Controls.Add(this.label3);
             this.grpValue.Controls.Add(this.label2);
             this.grpValue.Location = new System.Drawing.Point(12, 114);
             this.grpValue.Name = "grpValue";
-            this.grpValue.Size = new System.Drawing.Size(270, 171);
+            this.grpValue.Size = new System.Drawing.Size(270, 138);
             this.grpValue.TabIndex = 2;
             this.grpValue.TabStop = false;
             this.grpValue.Text = "Các giá trị:";
@@ -152,15 +148,6 @@
             this.chkAutoFill.Text = "Vẽ trọn khung";
             this.chkAutoFill.UseVisualStyleBackColor = true;
             this.chkAutoFill.CheckedChanged += new System.EventHandler(this.chkAutoFill_CheckedChanged);
-            // 
-            // txtDelay
-            // 
-            this.txtDelay.Location = new System.Drawing.Point(148, 137);
-            this.txtDelay.Name = "txtDelay";
-            this.txtDelay.Size = new System.Drawing.Size(103, 21);
-            this.txtDelay.TabIndex = 1;
-            this.txtDelay.Text = "0";
-            this.txtDelay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDelay_KeyPress);
             // 
             // txtMin
             // 
@@ -218,15 +205,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "- Giới hạn:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "- Độ trễ (ms):";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -240,9 +218,9 @@
             // 
             this.groupBox1.Controls.Add(this.btnZoomOut);
             this.groupBox1.Controls.Add(this.btnZoomIn);
-            this.groupBox1.Location = new System.Drawing.Point(12, 400);
+            this.groupBox1.Location = new System.Drawing.Point(12, 411);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 122);
+            this.groupBox1.Size = new System.Drawing.Size(270, 111);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Điều khiển";
@@ -250,7 +228,7 @@
             // btnZoomOut
             // 
             this.btnZoomOut.Image = ((System.Drawing.Image)(resources.GetObject("btnZoomOut.Image")));
-            this.btnZoomOut.Location = new System.Drawing.Point(134, 68);
+            this.btnZoomOut.Location = new System.Drawing.Point(11, 39);
             this.btnZoomOut.Name = "btnZoomOut";
             this.btnZoomOut.Size = new System.Drawing.Size(117, 32);
             this.btnZoomOut.TabIndex = 5;
@@ -263,7 +241,7 @@
             // btnZoomIn
             // 
             this.btnZoomIn.Image = ((System.Drawing.Image)(resources.GetObject("btnZoomIn.Image")));
-            this.btnZoomIn.Location = new System.Drawing.Point(134, 30);
+            this.btnZoomIn.Location = new System.Drawing.Point(134, 39);
             this.btnZoomIn.Name = "btnZoomIn";
             this.btnZoomIn.Size = new System.Drawing.Size(117, 32);
             this.btnZoomIn.TabIndex = 5;
@@ -279,9 +257,9 @@
             this.grpFunc.Controls.Add(this.label7);
             this.grpFunc.Controls.Add(this.btnFunc);
             this.grpFunc.Controls.Add(this.txtFunction);
-            this.grpFunc.Location = new System.Drawing.Point(12, 295);
+            this.grpFunc.Location = new System.Drawing.Point(12, 258);
             this.grpFunc.Name = "grpFunc";
-            this.grpFunc.Size = new System.Drawing.Size(270, 95);
+            this.grpFunc.Size = new System.Drawing.Size(270, 124);
             this.grpFunc.TabIndex = 1;
             this.grpFunc.TabStop = false;
             this.grpFunc.Text = "Biểu thức";
@@ -289,7 +267,7 @@
             // btnPaint
             // 
             this.btnPaint.Image = ((System.Drawing.Image)(resources.GetObject("btnPaint.Image")));
-            this.btnPaint.Location = new System.Drawing.Point(153, 47);
+            this.btnPaint.Location = new System.Drawing.Point(153, 64);
             this.btnPaint.Name = "btnPaint";
             this.btnPaint.Size = new System.Drawing.Size(104, 34);
             this.btnPaint.TabIndex = 3;
@@ -327,6 +305,7 @@
             this.txtFunction.Name = "txtFunction";
             this.txtFunction.Size = new System.Drawing.Size(212, 21);
             this.txtFunction.TabIndex = 0;
+            this.txtFunction.TextChanged += new System.EventHandler(this.txtFunction_TextChanged);
             this.txtFunction.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFunction_KeyPress);
             // 
             // btnAbout
@@ -573,11 +552,9 @@
         private System.Windows.Forms.TextBox txtTiLe;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMin;
         private System.Windows.Forms.TextBox txtMax;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDelay;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnZoomOut;
         private System.Windows.Forms.Button btnZoomIn;
