@@ -364,7 +364,7 @@
             this.btnZoom.FlatAppearance.BorderSize = 0;
             this.btnZoom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnZoom.Image = ((System.Drawing.Image)(resources.GetObject("btnZoom.Image")));
-            this.btnZoom.Location = new System.Drawing.Point(759, 588);
+            this.btnZoom.Location = new System.Drawing.Point(695, 547);
             this.btnZoom.Name = "btnZoom";
             this.btnZoom.Size = new System.Drawing.Size(88, 22);
             this.btnZoom.TabIndex = 13;
@@ -535,7 +535,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Ve Do Thi Ham So";
+            this.Text = "Đồ thị hàm số";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.Resize += new System.EventHandler(this.frmMain_Resize);
