@@ -7,6 +7,10 @@ using System.Text;
 using System.Windows.Forms;
 using EB.Math;
 using System.Collections;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Net;
+using System.Diagnostics;
 
 namespace VeDoThi
 {
@@ -24,16 +28,45 @@ namespace VeDoThi
         int colorPositon = 0;
         Color[] listColor = { Color.Blue, Color.Red, Color.Green, Color.Yellow };
 
+        class InternetConnection
+        {
+            [DllImport("wininet.dll")]
+            private extern static bool InternetGetConnectedState(out int description, int reservedValuine);
+            public static bool IsConnectedToInternet()
+            {
+                int desc;
+                return InternetGetConnectedState(out desc, 0);
+            }
+        }
         public frmMain()
         {
             InitializeComponent();
         }
+
+        string nguon = @"C:\\nguon";                //tạo thư mục nguồn lưu tất cả chương trình và cập nhật
+        string updatetxt = @"C:\\nguon\update.txt";    //tạo file.txt ghi mã hiệu bản cập nhật mới
+        string currenttxt = @"C:\\nguon\current.txt";  //tạo file.txt ghi mã hiệu bản hiện tại đang dùng.
+        string apppath = @"C:\\nguon\app";          //Tạo thư mục lưu chương trình sẽ giải nén của bạn.
+        string apprar = @"C:\\nguon\VeDoThi.rar";       //tên file.rar chương trình của bạn sẽ được tải về từ google drive
+        string rarpath = @"C:\\nguon\rarpath";      //tạo thư mục lưu file cài đặt winrar  
+        string rarexe = @"C:\\nguon\rarpath\WinRaR.exe"; //file khởi động winrar
+        string updateeexe = @"C:\\nguon\app\VeDoThi.exe"; //file khởi động chương trình của bạn.
+        string updatetxtlink = "https://docs.google.com/uc?export=download&id=1HIEp0LC51wEF2CDwasMgkIxBefIakqEq";  //duong dan update.txt
+        string applink = "";
+        string cai1 = Application.StartupPath + @"\Install.exe"; //duong dan den file ơ thu muc cung với chương trình
+        string cai2 = @"C:\\nguon\app\Install.exe";     //duong dan copy den thuc muc khoi dong
 
         #region Events
         private void frmMain_Load(object sender, EventArgs e)
         {
             g = PicPaint.CreateGraphics();
 
+            // tạo thư mục nguồn
+            create();
+            //
+
+            // code kiểm tra kết nối mạng
+            checkConnectInternet();
         }
         private void btnPaint_Click(object sender, EventArgs e)
         {
@@ -233,6 +266,81 @@ namespace VeDoThi
         #endregion
 
         #region Functions
+
+        private void checkConnectInternet()
+        {
+            if (InternetConnection.IsConnectedToInternet())
+            {
+                WebClient ud = new WebClient();
+                ud.DownloadFileCompleted += new AsyncCompletedEventHandler(udcom);
+                Uri update = new Uri(updatetxtlink);
+                ud.DownloadFileAsync(update, updatetxt);
+            }
+            else
+                MessageBox.Show("Không thể kiểm tra bản cập nhật do chưa kết nối mạng");
+
+
+        }
+
+        private void create()
+        {
+            if (Directory.Exists(nguon))
+            {
+                //tạo file current.txt
+                StreamWriter st = new StreamWriter(currenttxt);
+                st.WriteLine(lbCurVersion.Text);
+                st.Close();
+                if (Directory.Exists(apppath))
+                {
+
+                }
+                else
+                {
+                    Directory.CreateDirectory(apppath);
+                }
+            }
+            else
+            {
+                Directory.CreateDirectory(nguon);
+                Directory.CreateDirectory(apppath);
+
+            }
+        }
+        private void udcom(object sender, AsyncCompletedEventArgs e)
+        {
+            //doc file này cho vào label 2
+            StreamReader st = new StreamReader(updatetxt);
+            lbNewVersion.Text = st.ReadLine();
+            st.Close();
+            //thưc hien kiểm tra phiên bản de thong bao cap nhat
+            if (lbCurVersion.Text == lbNewVersion.Text)
+            {
+                //nếu bằng nhau thì không có bản cập nhật
+                MessageBox.Show("Không có bản cập nhật mới");
+            }
+            else //nếu không bằng nhau
+            {
+                //thong báo có bản cập nhật và phiên bản mới
+                DialogResult di = MessageBox.Show("Phiên bản cập nhật mới " + lbNewVersion.Text + " Đã sẵng sàn cài đặt",
+                    "Bản cập nhật mới", MessageBoxButtons.YesNo);
+                if (di == DialogResult.Yes) //neu nhan yes thì cập nhật
+                {
+                    //copy chương trình cài đặt trung gian vào c:\\nguon
+                    if (File.Exists(cai1))
+                        File.Copy(cai1, cai2, true);
+                    else
+                        File.Copy(cai1, cai2);
+                    //chạy cài trung gian
+
+                    Process.Start(cai1);
+
+                    // thoát chương trình này
+                    Application.Exit();
+                }
+        }
+        //tao file phiên bản hiện tại
+
+    }
         private void VeTrucToaDo()
         {
 
@@ -325,8 +433,6 @@ namespace VeDoThi
 
         }
 
-
-
         private void PaintGraph()
         {
             fn.Parse(txtFunction.Text.ToLower());
@@ -386,8 +492,6 @@ namespace VeDoThi
 
         }
 
-
-
         private double f(double x)
         {
             //return Math.Tan(x);
@@ -408,7 +512,6 @@ namespace VeDoThi
             }
             return fn.Result;
         }
-
 
         private void AutoMinMax()
         {

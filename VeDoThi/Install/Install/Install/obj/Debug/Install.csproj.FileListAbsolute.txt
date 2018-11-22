@@ -1,0 +1,9 @@
+D:\Study\C#\VeDoThi\Install\Install\Install\bin\Debug\Install.exe.config
+D:\Study\C#\VeDoThi\Install\Install\Install\bin\Debug\Install.exe
+D:\Study\C#\VeDoThi\Install\Install\Install\bin\Debug\Install.pdb
+D:\Study\C#\VeDoThi\Install\Install\Install\obj\Debug\Install.Form1.resources
+D:\Study\C#\VeDoThi\Install\Install\Install\obj\Debug\Install.Properties.Resources.resources
+D:\Study\C#\VeDoThi\Install\Install\Install\obj\Debug\Install.csproj.GenerateResource.cache
+D:\Study\C#\VeDoThi\Install\Install\Install\obj\Debug\Install.csproj.CoreCompileInputs.cache
+D:\Study\C#\VeDoThi\Install\Install\Install\obj\Debug\Install.exe
+D:\Study\C#\VeDoThi\Install\Install\Install\obj\Debug\Install.pdb
