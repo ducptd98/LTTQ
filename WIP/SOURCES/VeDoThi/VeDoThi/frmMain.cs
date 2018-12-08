@@ -435,6 +435,7 @@ namespace VeDoThi
 
         private void PaintGraph()
         {
+            PicPaint.Refresh();
             fn.Parse(txtFunction.Text.ToLower());
             fn.Infix2Postfix();
             if (fn.Variables.Count == 0 && txtFunction.Text != "")

@@ -525,7 +525,7 @@
             this.lbCurVersion.Name = "lbCurVersion";
             this.lbCurVersion.Size = new System.Drawing.Size(47, 27);
             this.lbCurVersion.TabIndex = 15;
-            this.lbCurVersion.Text = "v1.1";
+            this.lbCurVersion.Text = "v1.0";
             this.lbCurVersion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbNewVersion

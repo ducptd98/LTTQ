@@ -28,3 +28,14 @@ D:\Study\C#\VeDoThi\VeDoThi\obj\Debug\VeDoThi.exe
 D:\Study\C#\VeDoThi\VeDoThi\obj\Debug\VeDoThi.pdb
 D:\Study\C#\VeDoThi\VeDoThi\bin\Debug\VeDoThi.exe
 D:\Study\C#\VeDoThi\VeDoThi\bin\Debug\VeDoThi.pdb
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\bin\Debug\VeDoThi.exe
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\bin\Debug\VeDoThi.pdb
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.csprojAssemblyReference.cache
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.frmAbout.resources
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.frmMain.resources
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.Properties.Resources.resources
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.csproj.GenerateResource.cache
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.csproj.CoreCompileInputs.cache
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.exe
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Debug\VeDoThi.pdb
+C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\bin\Debug\VeDoThi.exe.config
