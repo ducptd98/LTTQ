@@ -469,7 +469,7 @@ namespace VeDoThi
                 Pen pen1 = new Pen(Color.Blue, 2);
 
                 g.DrawLine(pen1, x0 * min, y0 - _y * k, x0 * max, y0 - _y * k);
-
+                g.DrawString("y=" + txtFunction.Text, new Font("Tahoma", 10), new SolidBrush(listColor[colorPositon]), 5, positionY += 20);
 
 
                 return;
