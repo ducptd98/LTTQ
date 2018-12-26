@@ -25,8 +25,9 @@ namespace VeDoThi
         int m_x, m_y;
         bool stop = false, repaint = false ;
         int positionY = 5;
-        int colorPositon = 0;
-        Color[] listColor = { Color.Blue, Color.Red, Color.Green, Color.Yellow };
+        int oldPosition =5;
+        //int colorPositon = 0;
+        //Color[] listColor = { Color.Blue, Color.Red, Color.Green, Color.Yellow };
         List<string> listFunction;
         class InternetConnection
         {
@@ -80,6 +81,7 @@ namespace VeDoThi
             trkZoom.Value = 5;
             stop = false;
             listFunction.Add(txtFunction.Text);
+            g.DrawString("y=" + txtFunction.Text, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, positionY += 20);
             PaintGraph();
         }
 
@@ -142,16 +144,27 @@ namespace VeDoThi
             foreach (string item in listFunction)
             {
                
-                PaintGraph(item);
+                PaintGraph(item,oldPosition);
+                g.DrawString("y=" + item, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, oldPosition += 20);
             }
-            
+            oldPosition = 5;
             trkZoom.Focus();
         }
 
         protected override void OnPaint(PaintEventArgs pe)
         {
-            if (txtFunction.Text != "")
-                PaintGraph();
+            PicPaint.Refresh();
+            //foreach (string item in listFunction)
+            //{
+            //    PaintGraph(item,oldPosition);
+            //}
+            foreach (string item in listFunction)
+            {
+
+                PaintGraph(item, oldPosition);
+                g.DrawString("y=" + item, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, oldPosition += 20);
+            }
+            oldPosition = 5;
         }
 
         private void txtFunction_TextChanged(object sender, EventArgs e)
@@ -180,11 +193,18 @@ namespace VeDoThi
             k = k + 10;
             AutoMinMax();
             PicPaint.Refresh();
+            //foreach (string item in listFunction)
+            //{
+
+            //    PaintGraph(item, oldPosition);
+            //}
             foreach (string item in listFunction)
             {
 
-                PaintGraph(item);
+                PaintGraph(item, oldPosition);
+                g.DrawString("y=" + item, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, oldPosition += 20);
             }
+            oldPosition = 5;
             btnZoomIn.Enabled = true;
         }
 
@@ -203,11 +223,17 @@ namespace VeDoThi
             k = k - 10;
             AutoMinMax();
             PicPaint.Refresh();
+            //foreach (string item in listFunction)
+            //{
+            //    PaintGraph(item, oldPosition);
+            //}
             foreach (string item in listFunction)
             {
 
-                PaintGraph(item);
+                PaintGraph(item, oldPosition);
+                g.DrawString("y=" + item, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, oldPosition += 20);
             }
+            oldPosition = 5;
             btnZoomOut.Enabled = true;
         }
 
@@ -415,10 +441,7 @@ namespace VeDoThi
         {
             int limit = max_y / 30 * k;
 
-            Pen pen = new Pen(listColor[colorPositon], 2);
-            colorPositon++;
-            if (colorPositon == 4)
-                colorPositon = 0;
+            Pen pen = new Pen(Color.Blue, 2);
             x = min;
             dx = 1.0f / k;
 
@@ -469,13 +492,13 @@ namespace VeDoThi
                 Pen pen1 = new Pen(Color.Blue, 2);
 
                 g.DrawLine(pen1, x0 * min, y0 - _y * k, x0 * max, y0 - _y * k);
-                g.DrawString("y=" + txtFunction.Text, new Font("Tahoma", 10), new SolidBrush(listColor[colorPositon]), 5, positionY += 20);
+                //g.DrawString("y=" + txtFunction.Text, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, positionY += 20);
 
 
                 return;
             }
             arr = fn.Variables;
-            g.DrawString("y=" + txtFunction.Text, new Font("Tahoma", 10), new SolidBrush(listColor[colorPositon]), 5, positionY += 20);
+            //g.DrawString("y=" + txtFunction.Text, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, positionY += 20);
 
             if (arr.Count != 1)
             {
@@ -514,16 +537,17 @@ namespace VeDoThi
             ttStatus.Text = "Trạng thái: Hoàn tất !";
         }
 
-        private void PaintGraph(string fun)
+        private void PaintGraph(string fun, int position)
         {
             //PicPaint.Refresh();
             fn.Parse(fun.ToLower());
 
             fn.Infix2Postfix();
-            if (fn.Variables.Count == 0 && txtFunction.Text != "")
+            //position -= 20;
+            if (fn.Variables.Count == 0 && fun != "")
             {
                 //PicPaint.Refresh();
-                float _y = float.Parse(txtFunction.Text);
+                float _y = float.Parse(fun);
                 VeTrucToaDo();
                 Application.DoEvents();
 
@@ -531,12 +555,13 @@ namespace VeDoThi
 
                 g.DrawLine(pen1, x0 * min, y0 - _y * k, x0 * max, y0 - _y * k);
 
-
-
+                //g.DrawString("y=" + fun, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, position+=20);
+                //position += 20;
                 return;
             }
             arr = fn.Variables;
-            g.DrawString("y=" + txtFunction.Text, new Font("Tahoma", 10), new SolidBrush(listColor[colorPositon]), 5, positionY += 20);
+            //g.DrawString("y=" + fun, new Font("Tahoma", 10), new SolidBrush(Color.Blue), 5, position+=20);
+            //position += 20;
             if (arr.Count != 1)
             {
                 MessageBox.Show("Biểu thức không hợp lệ. Vui lòng nhập lại !\n\nVí dụ: (sin(x)+3)/(x+4)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -572,6 +597,7 @@ namespace VeDoThi
             btnPaint.Enabled = true;
             delay = 0;
             ttStatus.Text = "Trạng thái: Hoàn tất !";
+
         }
 
         private double f(double x)

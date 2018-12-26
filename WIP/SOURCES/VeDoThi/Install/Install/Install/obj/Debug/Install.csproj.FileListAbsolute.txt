@@ -17,3 +17,13 @@ C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Insta
 C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.csproj.CoreCompileInputs.cache
 C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.exe
 C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.pdb
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\bin\Debug\Install.exe.config
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\bin\Debug\Install.exe
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\bin\Debug\Install.pdb
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.csprojAssemblyReference.cache
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.Install.resources
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.Properties.Resources.resources
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.csproj.GenerateResource.cache
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.csproj.CoreCompileInputs.cache
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.exe
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Debug\Install.pdb

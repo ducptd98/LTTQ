@@ -18,3 +18,14 @@ C:\Users\DucPham\Documents\GitHub\LTTQ\VeDoThi\VeDoThi\obj\Release\VeDoThi.cspro
 C:\Users\DucPham\Documents\GitHub\LTTQ\VeDoThi\VeDoThi\obj\Release\VeDoThi.csproj.CoreCompileInputs.cache
 C:\Users\DucPham\Documents\GitHub\LTTQ\VeDoThi\VeDoThi\obj\Release\VeDoThi.exe
 C:\Users\DucPham\Documents\GitHub\LTTQ\VeDoThi\VeDoThi\obj\Release\VeDoThi.pdb
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\bin\Release\VeDoThi.exe.config
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\bin\Release\VeDoThi.exe
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\bin\Release\VeDoThi.pdb
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.csprojAssemblyReference.cache
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.frmAbout.resources
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.frmMain.resources
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.Properties.Resources.resources
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.csproj.GenerateResource.cache
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.csproj.CoreCompileInputs.cache
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.exe
+D:\CSharp\Winform\LTTQ\WIP\SOURCES\VeDoThi\VeDoThi\obj\Release\VeDoThi.pdb
