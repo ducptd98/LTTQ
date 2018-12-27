@@ -41,3 +41,5 @@ using System.Net;
 using System.Diagnostics;
 ```
 ## Giao diện ứng dụng
+1. Giao diện vẽ đồ thị
+![draw](https://user-images.githubusercontent.com/30264483/50488380-d931af80-0a34-11e9-8c2e-a7c6f0d9c2b8.png)
