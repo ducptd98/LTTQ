@@ -43,3 +43,7 @@ using System.Diagnostics;
 ## Giao diện ứng dụng
 1. Giao diện vẽ đồ thị
 ![draw](https://user-images.githubusercontent.com/30264483/50488380-d931af80-0a34-11e9-8c2e-a7c6f0d9c2b8.png)
+2. Chức năng phóng to
+![zoom](https://user-images.githubusercontent.com/30264483/50488385-e3ec4480-0a34-11e9-8baa-53d4db0497e6.png)
+3. Chức năng thu nhỏ
+![zoom_out](https://user-images.githubusercontent.com/30264483/50488390-ef3f7000-0a34-11e9-9963-77f9c0a00dc9.png)
