@@ -1,9 +1,0 @@
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\bin\Release\Install.exe.config
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\bin\Release\Install.exe
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\bin\Release\Install.pdb
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Release\Install.Install.resources
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Release\Install.Properties.Resources.resources
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Release\Install.csproj.GenerateResource.cache
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Release\Install.csproj.CoreCompileInputs.cache
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Release\Install.exe
-C:\Users\DucPham\Documents\GitHub\LTTQ\WIP\SOURCES\VeDoThi\Install\Install\Install\obj\Release\Install.pdb
